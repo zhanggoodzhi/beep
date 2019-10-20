@@ -1,22 +1,119 @@
-.login{
+.login {
   position: relative;
   min-height: 560px;
   height: calc(100vh);
-  background-image: url('~@/assets/register/bg.png');
-  background-size: cover;;
-  .login-wrapper{
+  background: url('~@/assets/register/bg.png') center -50px no-repeat;
+  background-size: auto 95%;
+  .login-wrapper {
     position: absolute;
     width: 700px;
-    height: 530px;
+    height: 500px;
     top: 50%;
     left: 50%;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 50px 0px #dadada;
+    border-radius: 5px;
     margin-top: -265px;
     margin-left: -350px;
-
-    .login-logo{ height: 62px; padding-bottom: 14px; }
-    .login-logo-bg{ height: 100%; width: 150px; background: rgba(217, 217, 217, 1); text-align: center; color: rgba(80, 80, 80, 1); }
-    .login-main{ border: rgba(225, 225, 225, 1) solid 1px; background: #fff; padding: 80px 8px 8px; }
-
-    .login-container{ padding-left: 57px; }
+    box-sizing: border-box;
+    padding: 77px;
+    padding-top: 100px;
+    .wx-btn {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .wx-img {
+      position: absolute;
+      left: 85px;
+      top: 35px;
+    }
+    .wx-span {
+      position: absolute;
+      font-size: 14px;
+      color: white;
+      left: 150px;
+      top: 37px;
+    }
+    .man {
+      position: absolute;
+      left: -238px;
+      top: 114px;
+    }
+    .women {
+      position: absolute;
+      left: 635px;
+      top: 190px;
+    }
+    .flower {
+      position: absolute;
+      left: -17px;
+      top: 380px;
+    }
+    & > .center {
+      & > .left {
+        width: 320px;
+        padding-right: 51px;
+        border-right: 1px solid #a6a6a6;
+        .title {
+          color: #505050;
+          .big {
+            font-size: 20px;
+            vertical-align: middle;
+          }
+          .split {
+            display: inline-block;
+            vertical-align: middle;
+            width: 1px;
+            height: 24px;
+            background-color: #505050;
+            margin: 0 15px;
+          }
+          .small {
+            font-size: 16px;
+            vertical-align: middle;
+          }
+        }
+        .tip {
+          font-size: 12px;
+          color: #a6a6a6;
+          margin-top: 15px;
+        }
+        .form-item {
+          margin-top: 40px;
+        }
+        .register-btn {
+          padding: 12px 0;
+          width: 100%;
+          margin-top: 57px;
+        }
+      }
+      & > .right {
+        text-align: left;
+        .label {
+          padding: 30px 0;
+          font-size: 12px;
+          color: #505050;
+          &:first-child {
+            margin-top: 27px;
+          }
+        }
+        .icon-wrap {
+          text-align: center;
+          margin-top: -10px;
+          img {
+            margin: 0 5px;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,23 @@
+.login{
+  position: relative;
+  min-height: 560px;
+  height: calc(100vh);
+  .bg-top{ background: rgba(132, 132, 133, 1); height: calc(50vh); min-height: 280px; }
+  .bg-bottom{ background: rgba(255, 255, 255, 1); height: calc(50vh); min-height: 280px; }
+
+  .login-wrapper{
+    position: absolute;
+    width: 700px;
+    height: 530px;
+    top: 50%;
+    left: 50%;
+    margin-top: -265px;
+    margin-left: -350px;
+
+    .login-logo{ height: 62px; padding-bottom: 14px; }
+    .login-logo-bg{ height: 100%; width: 150px; background: rgba(217, 217, 217, 1); text-align: center; color: rgba(80, 80, 80, 1); }
+    .login-main{ border: rgba(225, 225, 225, 1) solid 1px; background: #fff; padding: 80px 8px 8px; }
+
+    .login-container{ padding-left: 57px; }
+  }
+}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+$bg-theme-first: #d076fc;//#F4F7FA
+$bg-theme-second: #8459fe;//#F4F7FA
+
+.color-words-x{
+  background-image: linear-gradient(left, $bg-theme-first, $bg-theme-second);
+  -webkit-background-image: -webkit-linear-gradient(left, $bg-theme-first, $bg-theme-second);
+  -moz-background-image: -moz-linear-gradient($bg-theme-first, $bg-theme-second);
+  -o-background-image: -o-linear-gradient($bg-theme-first, $bg-theme-second);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+.color-words-x-hover{
+  &:hover{
+    cursor: pointer;
+    background-image: linear-gradient(left, $bg-theme-first, $bg-theme-second);
+    -webkit-background-image: -webkit-linear-gradient(left, $bg-theme-first, $bg-theme-second);
+    -moz-background-image: -moz-linear-gradient($bg-theme-first, $bg-theme-second);
+    -o-background-image: -o-linear-gradient($bg-theme-first, $bg-theme-second);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.color-bg{
+  background: -webkit-linear-gradient($bg-theme-first, $bg-theme-second); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient($bg-theme-first, $bg-theme-second); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient($bg-theme-first, $bg-theme-second); /* Firefox 3.6 - 15 */
+  background: linear-gradient($bg-theme-first, $bg-theme-second); /* 标准的语法 */
+}
+.color-bg-hover{
+  &:hover{
+    background: -webkit-linear-gradient($bg-theme-first, $bg-theme-second); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient($bg-theme-first, $bg-theme-second); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient($bg-theme-first, $bg-theme-second); /* Firefox 3.6 - 15 */
+    background: linear-gradient($bg-theme-first, $bg-theme-second); /* 标准的语法 */
+  }
+}

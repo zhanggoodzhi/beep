@@ -16,7 +16,8 @@
     margin-top: -265px;
     margin-left: -350px;
     box-sizing: border-box;
-    padding: 77px 100px;
+    padding: 77px;
+    padding-top: 100px;
     .wx-btn {
       position: absolute;
       top: 16px;
@@ -26,12 +27,12 @@
         opacity: 0.8;
       }
     }
-    img {
+    .wx-img {
       position: absolute;
       left: 85px;
       top: 35px;
     }
-    span {
+    .wx-span {
       position: absolute;
       font-size: 14px;
       color: white;
@@ -39,18 +40,80 @@
       top: 37px;
     }
     .man {
+      position: absolute;
       left: -238px;
       top: 114px;
     }
     .women {
+      position: absolute;
       left: 635px;
       top: 190px;
     }
     .flower {
+      position: absolute;
       left: -17px;
       top: 380px;
     }
-    .center {
+    & > .center {
+      & > .left {
+        width: 320px;
+        padding-right: 51px;
+        border-right: 1px solid #a6a6a6;
+        .title {
+          color: #505050;
+          .big {
+            font-size: 20px;
+            vertical-align: middle;
+          }
+          .split {
+            display: inline-block;
+            vertical-align: middle;
+            width: 1px;
+            height: 24px;
+            background-color: #505050;
+            margin: 0 15px;
+          }
+          .small {
+            font-size: 16px;
+            vertical-align: middle;
+          }
+        }
+        .tip {
+          font-size: 12px;
+          color: #a6a6a6;
+          margin-top: 15px;
+        }
+        .form-item {
+          margin-top: 40px;
+        }
+        .register-btn {
+          padding: 12px 0;
+          width: 100%;
+          margin-top: 57px;
+        }
+      }
+      & > .right {
+        text-align: left;
+        .label {
+          padding: 30px 0;
+          font-size: 12px;
+          color: #505050;
+          &:first-child {
+            margin-top: 27px;
+          }
+        }
+        .icon-wrap {
+          text-align: center;
+          margin-top: -10px;
+          img {
+            margin: 0 5px;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
     }
   }
 }

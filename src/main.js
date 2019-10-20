@@ -12,7 +12,21 @@ import Cookies from 'js-cookie'
 
 // import { Container, Main, Button, Select, Option, OptionGroup, Input, Table, Pagination, Notification, MenuItem, Icon, Row, Col, Tooltip, MessageBox, Message, FormItem, Form, Tabs, TabPane, Header, Slider, Footer, Menu, DatePicker } from 'element-ui' // 按需引用element-ui
 import 'element-ui/lib/theme-chalk/index.css' // 导入样式
-import { Row, Col, Button, Input, Tabs, TabPane, MessageBox, Message, Notification } from 'element-ui'
+//主题色
+import './element-variables.scss'
+import {
+  Row,
+  Col,
+  Button,
+  Input,
+  Tabs,
+  Option,
+  TabPane,
+  MessageBox,
+  Message,
+  Notification,
+  Select
+} from 'element-ui'
 // import ElementUI from 'element-ui'
 Vue.component('Row', Row)
 Vue.component('Col', Col)
@@ -35,7 +49,9 @@ Vue.use(Router)
 Vue.use(Row)
 Vue.use(Col)
 Vue.use(Button)
+Vue.use(Option)
 Vue.use(Input)
+Vue.use(Select);
 Vue.use(Tabs)
 Vue.use(TabPane)
 
@@ -100,6 +116,8 @@ new Vue({
   router,
   store,
   axios,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })

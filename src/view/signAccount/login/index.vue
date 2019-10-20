@@ -1,10 +1,8 @@
-<style lang="scss">
-  @import 'login';
+<style lang="scss" scoped>
+  @import 'index';
 </style>
 <template>
     <div class="login">
-      <div class="bg-top"></div>
-      <div class="bg-bottom"></div>
       <div class="login-wrapper">
         <div class="login-logo">
           <p class="login-logo-bg">logo</p>

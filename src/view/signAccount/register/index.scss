@@ -1,0 +1,56 @@
+.login {
+  position: relative;
+  min-height: 560px;
+  height: calc(100vh);
+  background: url('~@/assets/register/bg.png') center -50px no-repeat;
+  background-size: auto 95%;
+  .login-wrapper {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 50px 0px #dadada;
+    border-radius: 5px;
+    margin-top: -265px;
+    margin-left: -350px;
+    box-sizing: border-box;
+    padding: 77px 100px;
+    .wx-btn {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    img {
+      position: absolute;
+      left: 85px;
+      top: 35px;
+    }
+    span {
+      position: absolute;
+      font-size: 14px;
+      color: white;
+      left: 150px;
+      top: 37px;
+    }
+    .man {
+      left: -238px;
+      top: 114px;
+    }
+    .women {
+      left: 635px;
+      top: 190px;
+    }
+    .flower {
+      left: -17px;
+      top: 380px;
+    }
+    .center {
+    }
+  }
+}

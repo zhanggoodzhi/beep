@@ -2,9 +2,8 @@
   position: relative;
   min-height: 560px;
   height: calc(100vh);
-  .bg-top{ background: rgba(132, 132, 133, 1); height: calc(50vh); min-height: 280px; }
-  .bg-bottom{ background: rgba(255, 255, 255, 1); height: calc(50vh); min-height: 280px; }
-
+  background-image: url('~@/assets/register/bg.png');
+  background-size: cover;;
   .login-wrapper{
     position: absolute;
     width: 700px;

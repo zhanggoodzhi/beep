@@ -5,6 +5,7 @@ export default {
   component: {
     template: '<router-view></router-view>'
   },
+  redirect: '/login',
   // meta: {title: '登录注册'},
   children: [login, register]
 }

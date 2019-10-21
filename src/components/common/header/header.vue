@@ -1,5 +1,5 @@
 <style lang="scss">
-  @import 'header.scss';
+@import "header.scss";
 </style>
 <template>
   <div class="common-hearder-wrapper">
@@ -7,13 +7,18 @@
       <el-col :span="24">
         <div class="wrapper common-header clearfix">
           <div class="c-header-chunk header-logo">
-            <p class="header-logo-img">LOGO</p>
+            <img
+              class="header-logo-img"
+              src="@/assets/home/logo.png"
+              alt=""
+            >
           </div>
           <div class="c-header-chunk header-search">
             <el-input
               :placeholder="search.placeholder"
               suffix-icon="el-icon-search"
-              v-model="search.value">
+              v-model="search.value"
+            >
             </el-input>
           </div>
           <div class="c-header-chunk header-list">
@@ -32,7 +37,10 @@
           </div>
           <div class="c-header-chunk header-login">
             <ul class="header-list-box clearfix">
-              <li class="header-list-line" @click="goLogin()">登录</li>
+              <li
+                class="header-list-line"
+                @click="goLogin()"
+              >登录</li>
               <li class="header-list-line">注册</li>
             </ul>
           </div>
@@ -44,7 +52,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       search: {
         'value': '',

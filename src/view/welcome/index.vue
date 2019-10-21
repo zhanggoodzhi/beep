@@ -1,7 +1,7 @@
 <template>
   <div>
     <Common-header></Common-header>
-    <div class="min-h-container">hhhhh</div>
+    <div class="min-h-container"><router-view></router-view></div>
     <Common-footer></Common-footer>
   </div>
 </template>

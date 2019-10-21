@@ -2,8 +2,8 @@
   position: relative;
   min-height: 560px;
   height: calc(100vh);
-  background: url('~@/assets/register/bg.png') center -50px no-repeat;
-  background-size: auto 95%;
+  background: url('~@/assets/register/bg2.png') center no-repeat;
+  background-size: auto 80%;
   .login-wrapper {
     position: absolute;
     width: 700px;
@@ -41,13 +41,13 @@
     }
     .man {
       position: absolute;
-      left: -238px;
-      top: 114px;
+      left: -177px;
+      top: -116px;
     }
     .women {
       position: absolute;
-      left: 635px;
-      top: 190px;
+      left: 642px;
+      top: 270px;
     }
     .flower {
       position: absolute;
